@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Matthew Bassett's Portfolio</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 flex items-center justify-center px-6 py-4 bg-[rgb(188,201,208)] border-2 border-black">
+        <h1 class="gap-3 text-xl font-bold">About</h1>
+
+        <nav class="absolute left-6">
+            <a class="hover:underline transition" href="home-page.html">Home</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow grid grid-cols-2 grid-rows-2 gap-6 px-6 py-4 ">
+
+        <article class="border-2 border-black bg-gray-200">
+            <header class="flex justify-between items-center p-4 bg-gray-300">
+                <h2 class="font-bold">Cert IV in Programming</h2>
+            </header>
+            <section class="p-4 space-y-3">
+                <p>Learn industry-relevant programming skills in C#, Java, JavaScript, SQL, and ASP. Create websites, 
+                    databases, scripts, mobile apps, and games, and graduate with a strong portfolio that demonstrates 
+                    your abilities to employers.
+                </p>
+        </article>
+        
+
+        <article class="row-span-2 border-2 border-black bg-gray-200">
+                <img src="assets/img/cert4.png" class="w-full h-full object="fill">
+        </article>
+
+    </main>
+
+    <footer class="border-2 border-black bg-[rgb(188,201,208)] px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-center md:text-left">&copy; Copyright 2026 Matthew Bassett</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Matthew Bassett's Portfolio</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 flex items-center justify-center px-6 py-4 bg-[rgb(188,201,208)] border-2 border-black">
+        <h1 class="gap-3 text-xl font-bold">About</h1>
+
+        <nav class="absolute left-6">
+            <a class="hover:underline transition" href="home-page.html">Home</a>
+        </nav>
+        <nav class="absolute right-6">
+            <a class="hover:underline transition" href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow grid px-6 py-4">
+
+        <article class="border-2 border-black bg-gray-200 grid grid-cols-3 grid-rows-2 gap-4">
+
+            <header class="col-span-3 flex justify-between items-center p-4 bg-gray-300">
+            <h2 class="font-bold text-lg">Cert IV in Programming</h2>
+            <span class="text-sm">2026</span>
+            </header>
+
+            <section class="p-4">
+            <h3 class="font-semibold mb-2">Overview</h3>
+            <p>
+                Learn programming in C#, Java, JavaScript, SQL, and ASP.
+            </p>
+            </section>
+
+            <section class="p-4">
+            <h3 class="font-semibold mb-2">Skills</h3>
+            <ul class="list-disc pl-4 space-y-1">
+                <li>Web Development</li>
+                <li>Databases</li>
+                <li>Game Development</li>
+            </ul>
+            </section>
+
+            <section class="p-4">
+            <h3 class="font-semibold mb-2">Tools</h3>
+            <ul class="list-disc pl-4 space-y-1">
+                <li>C#</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+            </section>
+
+            <section class="p-4">
+            <h3 class="font-semibold mb-2">Projects</h3>
+            <p>Portfolio websites, apps, and database systems.</p>
+            </section>
+
+            <section class="p-4">
+            <h3 class="font-semibold mb-2">Experience</h3>
+            <p>Hands-on coding labs and real-world projects.</p>
+            </section>
+
+            <section class="p-4">
+            <h3 class="font-semibold mb-2">Goal</h3>
+            <p>Job-ready software developer skills.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="border-2 border-black bg-[rgb(188,201,208)] px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-center md:text-left">&copy; Copyright 2026 Matthew Bassett</p>
+        <ul class="flex gap-6 list-none">
+            <a href="about.html">About</a>
+        </ul>
+    </footer>
+</body>
+</html>
