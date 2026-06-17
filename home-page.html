@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Matthew Bassett's Portfolio</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 flex items-center justify-center px-6 py-4 bg-[rgb(188,201,208)] border-2 border-black">
+        <h1 class="gap-3 text-xl font-bold">Home Page</h1>
+
+        <nav class="absolute right-6">
+            <a class="hover:underline transition" href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow grid grid-cols-2 lg:grid-cols-2 gap-6 px-6 py-4 ">
+
+        <article class="border-2 border-black bg-gray-200">
+            <header class="flex justify-between items-center p-4 bg-gray-300">
+                <h2 class="font-bold">Contact</h2>
+            </header>
+            <section class="p-4 space-y-3">
+                <p>Get in touch and contact us and let us know how you find out website</p>
+                <a class="hover:underline transition" href="contact.html">Click here to go to the Contact Page</a>
+        </article>
+        
+
+        <article class="border-2 border-black bg-gray-200">
+            <header class="flex justify-between items-center p-4 bg-gray-300">
+                <h2 class="font-bold">Resume</h2>
+            </header>
+            <section class="p-4 space-y-3">
+                <p>Explpore a summary of my technical abilities, qualifications, abilities</p>
+                <a class="hover:underline transition" href="resume.html">Click here to go to the Resume Page</a>
+            </section>
+
+        </article>
+        
+        <article class="border-2 border-black bg-gray-200">
+            <header class="flex justify-between items-center p-4 bg-gray-300">
+                <h2 class="font-bold">Ninja API - Plantes & Stars</h2>
+            </header>
+            <section class="p-4 space-y-3">
+                <p>Search the Ninja API to retrieve astronomical data, including planetary characteristics, star properties, and other space-related information.</p>
+                <a class="hover:underline transition" href="project.html">Click here to go to the Ninja API Page</a>
+            </section>
+        </article>
+
+        <article class="border-2 border-black bg-gray-200">
+            <header class="flex justify-between items-center p-4 bg-gray-300">
+                <h2 class="font-bold">Pokemon App</h2>
+            </header>
+            <section class="p-4 space-y-3">
+                <p>Browse Pokémon data including stats, abilities, types, and images using data retrieved from the Pokémon API.</p>
+                <a class="hover:underline transition" href="sample-project.html">Click here to go to the Pokemon App Page</a>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer class="border-2 border-black bg-[rgb(188,201,208)] px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-center md:text-left">&copy; Copyright 2026 Matthew Bassett</p>
+        <ul class="flex gap-6 list-none">
+            <a href="about.html">About</a>
+        </ul>
+    </footer>
+</body>
+</html>
