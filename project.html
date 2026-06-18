@@ -4,89 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/modern-normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/site.css">
-    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/api-script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Matthew Bassett's Portfolio</title>
 </head>
 
-<body>
-    <header class="sticky top-0 z-50 flex items-center justify-between px-6 py-4 bg-[rgb(188,201,208)] border-2 border-black">
-        <h1 class="flex items-center gap-3 text-xl font-bold">
-            <img class="w-12 h-12 border-2 border-black rounded" src="https://placehold.co" alt="Square Placeholder">
-            Home Page4</h1>
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 flex items-center justify-center px-6 py-4 bg-[rgb(188,201,208)] border-2 border-black">
+        <h1 class="gap-3 text-xl font-bold">Ninja API</h1>
 
-        <button class="flex flex-col gap-1 md:hidden" aria-label="Open Navigation Menu">
-            <span class="w-6 h-1 bg-black"></span>
-            <span class="w-6 h-1 bg-black"></span>
-            <span class="w-6 h-1 bg-black"></span>
-        </button>
-
-
-        <nav class="hidden md:block">
-            <ul class="flex gap-6 list-none">
-                <li><a class="hover:underline transition" href="phase-1/index.html">Phase-1</a></li>
-                <li><a class="hover:underline transition" href="phase-2/index.html">Phase-2</a></li>
-                <li><a class="hover:underline transition" href="phase-3/copyright.html">Copyright</a></li>
-            </ul>
+        <nav class="absolute left-6">
+            <a class="hover:underline transition" href="home-page.html">Home</a>
+        </nav>
+        <nav class="absolute right-6">
+            <a class="hover:underline transition" href="about.html">About</a>
+        </nav>
         </nav>
     </header>
 
-    <main class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 py-4 ">
+    <main class="flex-grow grid grid-cols-2 gap-6 px-6 py-4 ">
 
-        <article class="lg:col-span-2 self-start border-2 border-black bg-gray-200">
-            <header class="flex justify-between items-center p-4 bg-gray-300">
-                <h2 class="font-bold">Teacher + Student = dumb and dumber</h2>
-                <img class="w-24 h-24 object-cover border-2 border-white"
-                    src="assets/img/html-css-javascript-joke.jpg" alt="Article-one-image">
+        <article class="border-2 border-black bg-gray-200">
+            <header class="flex justify-between items-center p-4 bg-gray-300 border-b-2 border-black">
+                <h2 class="font-bold text-lg">About API</h2>
             </header>
-            <section class="p-4 space-y-3">
-                <h3>Section 1</h3>
-                <p>This context is derived from APC Magazine, November 2007.</p>
-                <p>We had no idea there were so many dumb IT trainers and students out there.</p>
-                <p>The stories just keep coming in.</p>
-            </section>
-            
-            <footer class="p-4 italic bg-gray-300 border-t">
-                <p>
-                    Content is provided with permission from APC Magazine (TechRadar.com) for the
-                    purposes of education and training. Content is Copyright 2007 APC Magazine.
+
+            <section class="p-4">
+                <h3 class="font-bold text-lg mb-2">Planets</h3>
+                <p class="mb-2">
+                    Search for planets and retrieve information such as mass, radius,
+                    orbital period, and semi-major axis.
                 </p>
-            </footer>
+
+                <h3 class="font-bold text-lg mb-2 mt-4">Stars</h3>
+                <p>
+                    Search for stars and retrieve information such as constellation,
+                    magnitudes, distance, and spectral classification.
+                </p>
+            </section>
         </article>
 
-        <article class="lg:col-span-2 border-2 border-black bg-gray-200">
-            <header class="flex justify-between items-center p-4 bg-gray-300">
-                <h2 class="font-bold">Get Information From API </h2>
-                <img class="w-24 h-24 object-cover border-2 border-white" src="assets/img/user-error-joke.jpeg"
-                    alt="Article-four-image">
+        <article class="border-2 border-black bg-gray-200">
+            <header class="flex justify-between items-center p-4 bg-gray-300 border-b-2 border-black">
+                <h2 class="font-bold text-lg">Get Information From API</h2>
             </header>
 
             <form id="api-form">
-                <fieldset>
-                    <section class="p-4 space-y-3">
-                        <h3>Planets</h3>
-                        <input class="planet-input" type="text" placeholder="Enter planet information">
+                <fieldset class="p-4">
+                    <label class="flex items-center gap-2 mb-2">
+                        <span class="font-bold">Planets</span>
                         <input class="planet-checkbox" type="checkbox">
+                    </label>
+                    <input class="planet-input w-full p-2 border border-black bg-white mb-2" type="text" placeholder="Enter planet information">
 
-                        <h3>Stars</h3>
-                        <input class="star-input" type="text" placeholder="Enter star information">
+                    <label class="flex items-center gap-2 mb-2">
+                        <span class="font-bold">Stars</span>
                         <input class="star-checkbox" type="checkbox">
+                    </label>
+                    <input class="star-input w-full p-2 border border-black bg-white mb-2" type="text" placeholder="Enter star information">
 
-                        <button type="submit">Search</button>
-                        <p id="api-result">Results will be displayed here.</p>
-                    </section>
+                    <button class="border border-black bg-white px-3 py-1 hover:bg-gray-100" type="submit">
+                        Search
+                    </button>
+
+                    <p id="api-result" class="whitespace-pre-line mt-3 p-2 border border-black bg-white">
+                        Results will be displayed here.
+                    </p>
 
                 </fieldset>
             </form>
-            
-            <footer class="p-4 italic bg-gray-300 border-t">
-                <p>
-                    Content is provided with permission from APC Magazine (TechRadar.com) for the
-                    purposes of education and training. Content is Copyright 2007 APC Magazine.
-                </p>
-            </footer>
         </article>
 
     </main>
