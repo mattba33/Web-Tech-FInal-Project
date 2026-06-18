@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="assets/js/contact-script.js" defer></script>
     <title>Matthew Bassett's Portfolio</title>
 </head>
 
@@ -21,16 +22,30 @@
     </header>
 
     <main class="flex-grow grid gap-6 px-6 py-4 max-w-5xl mx-auto px-4">
+        <form id="contact-form">
+            <article class="border-2 border-black bg-gray-200">
+                <header class="flex justify-between items-center p-4 bg-gray-300">
+                    <h2 class="font-bold">Contact Information</h2>
+                </header>
 
-        <article class="row-span-1 border-2 border-black bg-gray-200">
-            <header class="flex justify-between items-center p-4 bg-gray-300">
-                <h2 class="font-bold">Contact Information</h2>
-            </header>
-            <section class="p-4 space-y-3">
-                <p>
-                </p>
-        </article>
+                <section class="p-4">
+                    <label for="name">Name</label>
+                    <input id="name" class="w-full p-2 border border-black bg-white mb-2" type="text" placeholder="Please Enter Name">
 
+                    <label for="email">Email</label>
+                    <input id="email" class="w-full p-2 border border-black bg-white mb-2" type="email" placeholder="Please Enter Email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" class="w-full p-2 border border-black bg-white mb-2" placeholder="Please Enter Message"></textarea>
+
+                    <button class="border border-black bg-white px-3 py-1 hover:bg-gray-100" type="submit">
+                        Send
+                    </button>
+
+                    <p id="error-message" class="text-red-600 mt-2"></p>
+                </section>
+            </article>
+        </form>
     </main>
 
     <footer class="border-2 border-black bg-[rgb(188,201,208)] px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
