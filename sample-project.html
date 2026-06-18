@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Matthew Bassett's Portfolio</title>
+</head>
+
+<body class="min-h-screen flex flex-col">
+    <header class="sticky top-0 z-50 flex items-center justify-center px-6 py-4 bg-[rgb(188,201,208)] border-2 border-black">
+        <h1 class="gap-3 text-xl font-bold">Pokemon App</h1>
+
+        <nav class="absolute left-6">
+            <a class="hover:underline transition" href="home-page.html">Home</a>
+        </nav>
+        <nav class="absolute right-6">
+            <a class="hover:underline transition" href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main class="flex-grow grid grid-cols-3 grid-rows-2 gap-4 px-6 py-4">
+
+        <article class="border-2 border-black bg-gray-200 col-span-2">
+            <header class="flex justify-between items-center p-4 bg-gray-300">
+                <h2 class="font-bold text-lg">About App</h2>
+            </header>
+            <p class="p-4">
+                This Pokémon API web application provides users with quick and easy access to 
+                information about Pokémon from across the Pokémon franchise. By connecting to 
+                the PokéAPI database, the application allows users to search for Pokémon and 
+                view detailed information such as their name, Pokédex number, type, abilities, 
+                height, weight, and official artwork. The goal of the application is to present 
+                Pokémon data in a clean, user-friendly interface that makes exploring and learning 
+                about different Pokémon simple and enjoyable.
+            </p>
+        </article>
+
+        <article class="border-2 border-black bg-gray-200 row-span-2">
+            <img src="assets/img/pokeapp.png">
+        </article>
+
+        <article class="border-2 border-black bg-gray-200 col-span-2">
+            <header class="flex justify-between items-center p-4 bg-gray-300">
+                <h2 class="font-bold text-lg p-4">How to Use</h2>
+            </header>
+            <p class="p-4">
+                Using the application is straightforward. Enter the name or Pokédex number of a Pokémon
+                into the search bar and submit your search. The application will then retrieve data from 
+                the Pokémon API and display the relevant information on the page. Users can browse different 
+                Pokémon, compare their statistics and characteristics, and learn more about their abilities 
+                and types. If an invalid Pokémon name or number is entered, the application will notify the 
+                user and prompt them to try another search.
+            </p>
+        </article>
+
+
+    </main>
+
+    <footer class="border-2 border-black bg-[rgb(188,201,208)] px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-center md:text-left">&copy; Copyright 2026 Matthew Bassett</p>
+        <ul class="flex gap-6 list-none">
+            <a href="about.html">About</a>
+        </ul>
+    </footer>
+</body>
+</html>
